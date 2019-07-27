@@ -5,9 +5,8 @@ import java.io.PrintWriter
 import scala.io.Source
 
 object FileUtil {
-  def readFile(fileName: String): String = {
-    val line = Source.fromFile(fileName).mkString
-    line
+  def readFile(fileName: String): Array[String] = {
+    Source.fromFile(fileName).getLines.toArray
   }
 
   def writeFile(fileName: String, writeString: String): Unit = {
