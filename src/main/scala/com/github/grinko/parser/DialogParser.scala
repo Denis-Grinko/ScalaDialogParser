@@ -1,6 +1,5 @@
 package com.github.grinko.parser
 
-import scala.util.matching.Regex.Match
 
 class DialogParser {
   val STRING_PREFIX = "— "
