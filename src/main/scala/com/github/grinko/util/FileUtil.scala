@@ -6,7 +6,7 @@ import scala.io.Source
 
 object FileUtil {
   def readFile(fileName: String): Array[String] = {
-    Source.fromFile(fileName).getLines().toArray
+    Source.fromFile(fileName).getLines.toArray
   }
 
   def writeFile(fileName: String, writeString: String): Unit = {
